@@ -1,4 +1,4 @@
-puzzle
+Puzzle
 ======
 
-Events Puzzle
+Events Puzzle solution
