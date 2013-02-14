@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Facebook Puzzle</title>
+		<link rel='stylesheet' type='text/css' href='css/style.css'>
+	</head>
+	<body>
+		<div class="header">
+			<div class="navigation">
+				<a href="#" class="logo">Facebook</a>
+			</div>
+		</div>
+
+        <div class="day-layout">
+            <ul class="day-time">
+                <li><span>9:00</span> <small>AM</small></li>
+                <li><small>9:30</small></li>
+                <li><span>10:00</span> <small>AM</small></li>
+                <li><small>10:30</small></li>
+                <li><span>11:00</span> <small>AM</small></li>
+                <li><small>11:30</small></li>
+                <li><span>12:00</span> <small>PM</small></li>
+                <li><small>12:30</small></li>
+                <li><span>1:00</span> <small>PM</small></li>
+                <li><small>1:30</small></li>
+                <li><span>2:00</span> <small>PM</small></li>
+                <li><small>2:30</small></li>
+                <li><span>3:00</span> <small>PM</small></li>
+                <li><small>3:30</small></li>
+                <li><span>4:00</span> <small>PM</small></li>
+                <li><small>4:30</small></li>
+                <li><span>5:00</span> <small>PM</small></li>
+                <li><small>5:30</small></li>
+                <li><span>6:00</span> <small>PM</small></li>
+                <li><small>6:30</small></li>
+                <li><span>7:00</span> <small>PM</small></li>
+                <li><small>7:30</small></li>
+                <li><span>8:00</span> <small>PM</small></li>
+                <li><small>8:30</small></li>
+                <li><span>9:00</span> <small>PM</small></li>
+            </ul>
+	        <div id="events" class="events-list"></div>
+        </div>
+	</body>
+
+	<script src="js/app.js"></script>
+	<script>
+		window.onload = function () {
+			var originalEvents =
+					[
+						{id: 1, start: 30, end: 150},
+						{id: 2, start: 540, end: 600},
+						{id: 3, start: 560, end: 620},
+						{id: 4, start: 610, end: 670}
+					];
+
+			var processedEvents = layOutDay(originalEvents);
+
+			render(processedEvents);
+		}
+	</script>
+</html>
