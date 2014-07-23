@@ -3,6 +3,9 @@ Puzzle
 
 Events Puzzle solution from Facebook - http://whitesyn.github.io/puzzle/
 
+Description
+======
+
 Given a set of events, render the events on a single day calendar (similar to Outlook, Calendar.app, and Google Calendar). 
 
 There are several properties of the layout:
